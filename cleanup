@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf certitude.log certitudeDB certitudeMetricReport certitudeReport certitudeTmp certitude_comm.log certitude_commands.log certitude_compile.log certitude_optimizer.log csrc fsdbdebugLog novas.conf novas.rc novas_dump.log sim.out simv simv.daidir ucli.key verdiLog 
+rm -rf .certitudeGUI .certitude_comm.cercfg .certitude_verdi.cercfg
+rm -rf cer_instrumented_files.f tmpHDLFiles .certitude.iu

@@ -1,0 +1,1 @@
+vcs -v2k bitcnt_tb.v bitcnt.v  -debug_all -R -full64 -l sim.out

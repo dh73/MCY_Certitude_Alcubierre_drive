@@ -1,0 +1,3 @@
+setconfig -TopName=work.bitcnt
+setconfig -Simulator=native
+setconfig -FaultSet=[list RTL Connectivity]

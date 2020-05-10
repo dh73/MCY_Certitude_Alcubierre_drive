@@ -1,0 +1,14 @@
+#!/bin/bash -fx
+vcs -v2k bitcnt_tb.v bitcnt.v  -debug_all -R -full64 -l sim.out
+## check simulation output to obtain result status
+if grep PASS sim.out && ! grep ERROR sim.out; then
+	$CER_SIMULATION_RESULT -result=Pass
+	exit 0
+elif ! grep PASS sim.out && grep ERROR sim.out; then
+	$CER_SIMULATION_RESULT -result=Fail
+	exit 1
+else
+        $CER_SIMULATION_RESULT -result=Fail
+fi
+
+exit 0

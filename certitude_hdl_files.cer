@@ -1,0 +1,1 @@
+addverilog -qualify -library=work -file=bitcnt.v
